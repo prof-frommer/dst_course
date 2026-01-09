@@ -1,0 +1,14 @@
+# Student workspace (do not commit student files)
+
+/student_work/**
+!/student_work/.gitkeep
+!/student_work/README.md
+
+# Instructor files
+/_instructor/
+
+# Microsoft Office temporary files (Windows)
+~$*
+
+# macOS Finder metadata
+.DS_Store 
