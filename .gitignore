@@ -9,6 +9,8 @@
 
 # Microsoft Office temporary files (Windows)
 ~$*
+*.tmp
+*.bak
 
 # macOS Finder metadata
 .DS_Store 
