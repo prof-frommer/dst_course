@@ -1,0 +1,5 @@
+This was written several years ago by very talented ORCA major named Cody Bellamy.  
+
+While some of the workflows, screenshots, and references to D2L are slightly out-of-date, most of the information is still accurate and it remains a very helpful guide today.
+
+Some of the instructions are directed towards instructors, but those can be applied to anyone creating a repo to work collaboratively, such as yourselves! We likely won't cover all that's in the document (e.g. forking) but you may want to try these things out.
