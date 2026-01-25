@@ -1,0 +1,42 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1.0in]{geometry}
+\usepackage{amssymb}	% for \square check-box
+\usepackage{hyperref}
+\pagestyle{empty}
+\newcounter{lastNum}   % allows for interspersing text between questions
+\begin{document}
+
+\begin{center}
+	\textbf{Data Science Techniques (MAT 339)} \\
+	\textbf{Homework 2} - - \textbf{10 Points} \\
+\end{center}	
+Submit a \textbf{hard copy }of your work at the beginning of class on Wednesday, January 28th.  There is no \textbf{electronic submission }for this homework.
+
+\begin{enumerate}
+	\item Download the free book \textit{The Linux Command Line} from \url{https://linuxcommand.org/tlcl.php}. Although we are not using Linux, much of the content of this book applies to us in Git Bash.
+	\begin{enumerate}
+		\item 	Read pages xvi to xviii of the \textbf{Introduction}. 
+		\item   Spend at least another 10-15 minute skimming the book and jot down a few pieces of information you learned as your answer to this question.
+	\end{enumerate}
+
+	
+	\item On your computer find (or create) a folder with numerous files in it (and possibly folders).  Use an \texttt{ls} command with some of its options (use \texttt{-l} and others) to list the files. Then use the approach shown in class to redirect the listing to a file (name it \texttt{file-listing.txt} or similar). For your answer to this question include:
+	\begin{enumerate}
+		\item your line of code with the redirect
+		\item a screen shot of the resulting text file open in Notepad or similar
+	\end{enumerate} 
+	
+	\item Jake VanderPlas' \textit{Python Data Science Handbook} is available from a GitHub repo at \url{https://github.com/jakevdp/PythonDataScienceHandbook}. Start by cloning this repo to your machine. (Note it is around 80 Mb, so if you are low on space, find a different smaller repo online to use.) Using shell commands covered in class (including \texttt{ls} with options), find all Jupyter files in this repo and list their names with details in decreasing order of file size.
+	
+	\item Go a folder on your machine with regular activity of files being saved there, such as your \textbf{Downloads} or \textbf{Documents} folder.  
+	\begin{enumerate}
+		\item Look up the \texttt{-mtime} option of the \texttt{find} command in the \textit{The Linux Command Line} book you downloaded at the beginning of this homework and read about it.  What page was it on?  
+		\item Use the \texttt{-mtime} option to list files in the folder modified within some recent amount of time, enough to return some but not too many results. Do not submit this result.
+		\item Now repeat the previous step but pipe it to the \texttt{tr} command changing the letters (and possibly numbers as well) to something that would cloak them, e.g. change all letters to B's.  There are examples of the usage of \texttt{tr} in the slides from Day 2 and in the book. Include your command for this part and a screen shot (or pasted text) of the result in your homework submission.
+	\end{enumerate}
+
+\end{enumerate}
+
+
+
+\end{document}
