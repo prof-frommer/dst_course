@@ -8,6 +8,7 @@ Course materials for Data Science Techniques (USCGA course)
 **See `ADMIN/Accessing Course Content using GitHub.docx` for guidance on using this repo.**  Ask me if you have any questions.
 
 ## Repository history and updates
+- **2026-01-28** - hw03 added, fixed typo in lec03 ppt
 - **2026-01-28** - added lec03 pptx
 - **2026-01-25** - sharing hw2 LaTeX doc in case you want to use it to create yours (LaTeX not required but encouraged on HW 2); also added *The Linux Command Line* book (pdf)
 - **2026-01-21** - added lec02
