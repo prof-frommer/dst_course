@@ -1,0 +1,15 @@
+## Info on Quiz 1
+- In class next week on W 2/11/25
+- Covers material from Days 1 - 4 
+    - intro, github  (but not LaTeX)
+    - terminal
+    - data wrangling in the terminal 
+    - structured data and queries in the terminal
+- This quiz will be worth between 20 and 40 points (i.e. equivalent to 2-4 homeworks) depending on how long it ends up being.
+- You may bring one 3" x 5" note card of notes created by you. You may use both sides, hand-write and/or type.
+- Questions types may include multiple choice, True/False, matching, and short written response.
+- Questions may ask you to hand-write brief terminal command sequences and to describe what given command sequences accomplish.
+- To prepare:
+    - start with active recall of material covered in class and on the homework
+    - then refer to those materials to see what you recalled correctly, recalled incorrectly, and did not recall at all
+    - spend time practicing commands in the terminal
