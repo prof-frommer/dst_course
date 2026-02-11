@@ -1,0 +1,145 @@
+\documentclass[11pt]{exam}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\usepackage{enumitem}
+\pagestyle{head}
+
+\begin{document}
+	\textbf{Name:} \rule{3.5in}{0.4pt}
+		\begin{center}
+		{\Large \textbf{MAT 339 Data Science Techniques - - Quiz 1}} \\[0.5em]
+		\textbf{11 February 2026} \hfill \textbf{20 points} \hfill \textbf{Time: 20--25 minutes} \\[0.5em]
+	\end{center}
+	\textit{You may use one 3" $\times$ 5" note card hand-written and/or typed by you, notes on both sides allowed.}\\
+	All questions refer to commands that can be executed in Git Bash or Anaconda PowerShell unless otherwise noted.
+	
+	\begin{questions}
+		\question[3]  Briefly describe what each of the following commands accomplishes.
+		\begin{parts}
+			\part \texttt{ls -l}
+			\vspace{5em}
+
+			\part
+			\begin{verbatim}
+			echo "hello world" | tr [j-t] [J-T]
+			\end{verbatim}		
+			\vspace{7em}
+
+			\part
+			\begin{verbatim}
+			grep error logfile.txt | tee errors.txt
+			\end{verbatim}
+			\vspace{7em}
+			
+		\end{parts}
+
+		\question[3] Write a command (or commands) covered in class and/or the homework to accomplish each of the following tasks (there may be more than one way to accomplish each):
+		
+		\begin{parts}
+			\part download several files with a single command; assume the files are located at \texttt{http://www.us.gov/}, have the names \texttt{data01.dat, data02.dat, data03.dat, data04.dat} and that we want the files to have the same names once downloaded
+			\vspace{5em}
+			\part count the number of lines in a file named \texttt{system-log.txt}
+			\vspace{4em}
+			\part view the first 4 lines of a file named \texttt{speech.md}
+			\vspace{4em}
+			
+		\end{parts}
+		
+		\newpage
+		\question[1] Which command prints the names of all markdown (\texttt{.md}) files within the current directory and its subdirectories?
+		\begin{choices}
+			\choice \texttt{ls *.md}
+			\choice \texttt{find . -type d -name "*.md"}
+			\CorrectChoice \texttt{find . -name "*.md"}
+			\choice \texttt{grep ".md" *}
+			\choice \texttt{find *.md}
+		\end{choices}
+		
+		\vspace{3em}
+		\question[1] Suppose \texttt{data01.csv} is a \textbf{csv} file.  
+		Which command prints the \textbf{unique values from the 8th column}, sorted alphabetically?
+		
+		\begin{choices}
+			\choice \texttt{cut -f8 data01.csv | uniq | sort}
+			\choice \texttt{cut -d',' data01.csv | uniq | sort}
+			\CorrectChoice \texttt{cut -d',' -f8 data01.csv | uniq | sort}
+			\choice \texttt{cut -d',' -f8 data01.csv | sort | uniq}
+			\choice \texttt{csvcut -c 8 data01.csv | uniq}
+		\end{choices}
+
+		\vspace{3em}		
+		\question[3] Indicate whether each statement is \textbf{True} or \textbf{False}.
+		\begin{parts}
+			\part
+			\begin{minipage}[t]{0.75\linewidth}
+				If two collaborators on a GitHub repo make overlapping changes to a file, 
+				\texttt{git} can automatically resolve the conflict.
+			\end{minipage}
+			\hfill
+			\begin{minipage}[t]{0.2\linewidth}
+				\raggedleft True \quad False
+			\end{minipage}
+			\vspace{2em}
+			
+			\part
+			\begin{minipage}[t]{0.75\linewidth}
+				The \texttt{\textbackslash D} regular expression shorthand character class 
+				signifies “match a single digit.”
+			\end{minipage}
+			\hfill
+			\begin{minipage}[t]{0.2\linewidth}
+				\raggedleft True \quad False
+			\end{minipage}
+			\vspace{2em}
+			
+			\part
+			\begin{minipage}[t]{0.75\linewidth}
+				The command \texttt{csvgrep -c 3 -m 42 data01.csv} searches for the value 
+				\texttt{42} anywhere in the third column of \texttt{data01.csv}.
+			\end{minipage}
+			\hfill
+			\begin{minipage}[t]{0.2\linewidth}
+				\raggedleft True \quad False
+			\end{minipage}
+			
+		\end{parts}
+		
+	\newpage
+	\vspace{1em}	
+		
+		\question[4] Match the Git command on the left with its purpose on the right. Write the letter of the correct purpose in the blank next to each command. Some options will not be used.
+		\medskip		
+		\begin{tabular}{p{0.25\textwidth} p{0.65\textwidth}}
+			\textbf{Git Command} & \textbf{Purpose} \\
+			\hline
+			\\ 1. \texttt{git pull} \_\_\_\_ & A. Record a snapshot of changes in your local repository \\
+			\\ 2. \texttt{git commit} \_\_\_\_  & B. Stage changes to be included in the next commit  \\			
+			\\ 3. \texttt{git push} \_\_\_\_  & C. Download a repository from a remote server \\
+			\\ 4. \texttt{git clone} \_\_\_\_  & D. Retrieve changes from a remote repository and merge locally \\
+			\\ & E. Upload committed changes to a remote repository \\
+			\\ & F. Show the status of files \\
+
+		\end{tabular}
+		
+		% Instructor Answer Key (for reference)
+		% 1 → D
+		% 2 → A
+		% 3 → E
+		% 4 → C
+		
+		\vspace{3em}
+		\question[2] What does \texttt{csvstat data.csv} provide that \texttt{csvlook data.csv} does not?
+		\vspace{8em}
+		
+		\question[2] Which \texttt{csvkit} command allows you to select columns by name or number from a \textbf{csv} file?
+		\vspace{8em}
+		
+		\question[1] In a complete sentence or two, explain one or more advantages of using the terminal over alternatives. 
+		\vspace{6em}
+		
+				
+		
+	\end{questions}
+	
+\end{document}
