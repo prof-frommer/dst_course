@@ -1,0 +1,38 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1.0in]{geometry}
+\usepackage{amssymb}	% for \square check-box
+\usepackage{hyperref}
+\pagestyle{empty}
+\newcounter{lastNum}   % allows for interspersing text between questions
+\begin{document}
+	
+	\begin{center}
+		\textbf{Data Science Techniques (MAT 339)} \\
+		\textbf{Homework 6 - PART I} - - \textbf{HW 6 will be worth 10 points total}\\
+	\end{center}
+	Submit a \textbf{hard copy }of your work at the beginning of class on Wednesday, February 25th. There is no \textbf{electronic submission }for PART I of this homework. \\
+
+
+\begin{enumerate}
+	
+	\item In this question you will read about the basics of a powerful automation tool known as \texttt{make} and install it on your system.
+	\begin{enumerate}
+		\item Read the \texttt{lec-makefiles.pptx} slides in the \texttt{lec05-automation-shell-scripts} folder of the course repo.  \textbf{Optionally} also read the \textbf{Build Systems} section of this web page: \href{https://missing.csail.mit.edu/2020/metaprogramming/}{https://missing.csail.mit.edu/2020/metaprogramming/}
+		\item Install make in your system by following the instructions in \texttt{"Installing make for Git Bash.docx"} in the \textbf{Admin} folder of the course repo.
+	\end{enumerate}
+
+
+	\item In this question you will create and run a very simple \texttt{makefile}.
+	\begin{enumerate}
+		\item Create a one-line text file named \texttt{name01.dat} that contains one name, e.g. "Bart".
+		\item Write a Python file named \texttt{hello.py} that reads in \texttt{name01.dat} and prints a greeting with that person's name, as in "Hello Bart!".
+		\item You may already know you can run Python files from the command line if your terminal has Python installed. Earlier in the semester you should have set up \textbf{Anaconda} to run within \textbf{Git Bash} enabling this capability. In the terminal, in the same folder as the two files you just created, type \texttt{python hello.py}.  Include this terminal line and the output as your answer to this part. 
+		\item Following the information in the slides you were to read above, create a simple \texttt{makefile} (you can name it \texttt{Makefile} or \texttt{Makefile.print-hello}) that runs \texttt{hello.py} and pipes its output (use \texttt{>}) to a file named \texttt{hello.txt}.  The dependencies of \texttt{hello.txt} in the \texttt{makefile} should be \texttt{name01.dat} and \texttt{hello.py}. Include your \texttt{makefile} and successful execution of it as your answer to this part.
+		\item Without changing \texttt{name01.dat}, run the \texttt{makefile} again. Supply the output as your answer to this part.
+		\item Change the contents of \texttt{name01.dat} and run the \texttt{makefile}. Supply the output as your answer to this part. 
+	\end{enumerate}
+	
+	\item THIS QUESTION IS OPTIONAL. In order to automate \LaTeX\  file production using \texttt{make}, install \textbf{MiKTeX}, and optionally a \LaTeX\  editor like \textbf{TeXstudio}. Links are available through a Google search.
+\end{enumerate}
+
+\end{document}

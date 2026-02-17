@@ -1,0 +1,42 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1.0in]{geometry}
+\usepackage{amssymb}	% for \square check-box
+\usepackage{hyperref}
+\pagestyle{empty}
+\newcounter{lastNum}   % allows for interspersing text between questions
+\begin{document}
+	
+	\begin{center}
+		\textbf{Data Science Techniques (MAT 339)} \\
+		\textbf{Homework 5} - - \textbf{10 Points}\\
+	\end{center}
+	Submit a \textbf{hard copy }of your work at the beginning of class on Wednesday, February 18th. There is no \textbf{electronic submission }for this homework. \\
+
+
+\begin{enumerate}
+	
+	\item Read the \textbf{Shell Script Essentials} page (you may stop once you reach the \textbf{Sourcing Shell Scripts} section) from the online version of the \textit{Effective Shell} book, available at: \href{https://effective-shell.com/part-3-manipulating-text/shell-script-essentials/}{https://effective-shell.com/part-3-manipulating-text/shell-script-essentials/} and follow its guidance in creating and running shell scripts (you can use \textbf{Git Bash} or \textbf{WSL}) with these potential modifications:
+
+	\begin{itemize}
+		\item Under the \textbf{Creating a Simple Script} section, you can put the scripts you create in any folder of yours you would like, and name them what you would like.
+		
+		\item Under the \textbf{Running a Shell Script} section, if you are using \textbf{Git Bash}, the \texttt{chmod} instructions concerning file privileges will not apply, though these are important on any true Linux or Unix system, so make note of them. You should be able to run your script without changing privileges by typing \texttt{./myscript.sh} replacing \texttt{myscript.sh} with the name of your script.
+
+		\item In the \textbf{Using Shebangs} section, write and run the Python script that is shown as an example. You should have Python working through \textbf{Git Bash} (see my email of 30 JAN), but you may need to alter the \textbf{shebang} path in your script to get it to work.  (Here's what I did: 1. \texttt{conda activate}, 2. \texttt{which python} 3. changed the first line of the script to the shebang (\verb|#|!) plus the path from step 2, no space in between.)
+	\end{itemize}
+	
+	Write one additional script of your own and run that.
+	
+	Include the scripts you wrote (two from the reading plus your own additional one) and the results of running them as your response to this question. Avoid screen shots of dark windows.
+	
+	\item The \textbf{shebang} is not necessary for running \textbf{bash} scripts in \textbf{Git Bash} but typically is necessary on Unix and Linux systems (including WSL). A generally safe-to-use \textbf{shebang} for \textbf{bash} scripts is:
+	\begin{verbatim}
+	#!/usr/bin/env bash
+	\end{verbatim}  This tells the system to find bash wherever it lives on the system and to use it to run the script. 	Skim this Wikipedia page about shebangs at: \\ \href{https://en.wikipedia.org/wiki/Shebang_(Unix)}{https://en.wikipedia.org/wiki/Shebang\_(Unix)}
+	
+	\item This next task is optional but highly recommended. I plan to demonstrate writing and running shell scripts using \textbf{Visual Studio Code (VS Code)}. VS Code is an integrated development environment (IDE) like Spyder but with somewhat different capabilities. It allows you to run a built-in Git Bash terminal, so we can write and test our scripts in one program. If you choose not to install it, you can edit your shell scripts in nano, Notepad, Spyder, or any other editor, and can test your scripts in Git Bash. VS Code is available from:
+	\href{https://code.visualstudio.com/docs/setup/setup-overview}{https://code.visualstudio.com/docs/setup/setup-overview}
+	
+\end{enumerate}
+
+\end{document}

@@ -8,6 +8,7 @@ Course materials for Data Science Techniques (USCGA course)
 **See `ADMIN/Accessing Course Content using GitHub.docx` for guidance on using this repo.**  Ask me if you have any questions.
 
 ## Repository history and updates
+- **2026-02-17** - revised hw05, added hw06 part I, added lec05 makefile slides
 - **2026-02-11** - added hw05 part I
 - **2026-02-04** - added lec04 pptx and some support files; added quiz01 info; hw04 coming soon
 - **2026-01-28** - hw03 added, fixed typo in lec03 ppt
