@@ -1,0 +1,4 @@
+# A simple Makefile
+
+hello.txt: name01.dat hello.py
+	python hello.py > hello.txt

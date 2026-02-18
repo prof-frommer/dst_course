@@ -1,0 +1,5 @@
+# A simple Makefile
+all: output.txt
+
+output.txt: data01.dat square.py
+	python square.py > output.txt
