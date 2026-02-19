@@ -8,9 +8,9 @@
 	
 	\begin{center}
 		\textbf{Data Science Techniques (MAT 339)} \\
-		\textbf{Homework 6 - PART I} - - \textbf{HW 6 will be worth 10 points total}\\
+		\textbf{Homework 6} - - \textbf{10 points}\\
 	\end{center}
-	Submit a \textbf{hard copy }of your work at the beginning of class on Wednesday, February 25th. There is no \textbf{electronic submission }for PART I of this homework. \\
+	Submit a \textbf{hard copy }of your work at the beginning of class on Wednesday, February 25th. There is no \textbf{electronic submission }for this homework. \\
 
 
 \begin{enumerate}
@@ -33,6 +33,25 @@
 	\end{enumerate}
 	
 	\item THIS QUESTION IS OPTIONAL. In order to automate \LaTeX\  file production using \texttt{make}, install \textbf{MiKTeX}, and optionally a \LaTeX\  editor like \textbf{TeXstudio}. Links are available through a Google search.
+	
+	\item Starting with the \texttt{covid-3.sh} shell script from the course repo (in the \\ \texttt{lec05-automation-shell-scripts/ex-covid} folder), make the changes to meet the requirements described below. Feel free to make other changes (e.g. plot "Confirmed" instead of "Deaths") as long as they do not reduce the scope of the script.
+	\begin{enumerate}
+		\item save the two csv files and the png file with the name of the state (e.g. \texttt{Maine.csv, Maine-trim.csv, Maine.png})  (Hint: use \$\{var-name\} to refer to a variable name)
+		\item pass some part of the date in to your script as an argument; this can be the year, the month, the day or some combination as long as your script will still be downloading some range of data files and achieving the same processing as before for the dates; for example, pass the month as a two digit code and obtain data for the 1st through the 10th day of that month
+		\item come up with another alteration to the script of your own to make it more functional
+		
+\textbf{Submit your script and displays of it running in the terminal and the png file it creates.
+}	\end{enumerate}
+
+	\item Creat your own shell script from scratch that utilizes several \textbf{terminal commands} along with \textbf{Python} and/or \textbf{sqlite3}. The level of complexity of your script should be close to that of the COVID one (the version from class). Choose something you are interested in and that has potential for expansion, because you will have the opportunity to expand it for the course final project.  Answer these questions about your script:
+	\begin{enumerate}
+		\item What problem or issue does your script address?
+		\item List the terminal commands it uses:
+		\item What other programs does it use (e.g. Python, sqlite3, etc.) and what functionality do those programs add to the script?
+		\item How would you expand it if it was to become a final project?
+		\item Include your script and output of it running in the terminal plus any other output it creates if any (e.g. png file). If your script generates a large amount of output, only include a portion of that in your homework.
+	\end{enumerate}
+
 \end{enumerate}
 
 \end{document}
