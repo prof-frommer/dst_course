@@ -1,0 +1,48 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1.0in]{geometry}
+\usepackage{amssymb}	% for \square check-box
+\usepackage{hyperref}
+\usepackage{enumitem}
+
+\pagestyle{empty}
+\newcounter{lastNum}   % allows for interspersing text between questions
+\begin{document}
+	
+	\begin{center}
+		\textbf{Data Science Techniques (MAT 339)} \\
+		\textbf{Homework 7} - - \textbf{10 points}\\
+	\end{center}
+	Submit a \textbf{hard copy }of your work at the beginning of class on \underline{Wednesday, March 18th}. There is no \textbf{electronic submission }for this homework. \\
+	
+	\begin{enumerate}
+		
+		\item Referring back to \textbf{Homework 6}, choose either your resulting COVID-19 script from question \#4 or your own original script you created in question \# 5 and extend them by adding in each of the following to what is already in the script:
+		\begin{itemize}
+			\item an \texttt{if} block using one or more of the comparison operators 
+			\item a \texttt{for} loop
+			\item some math using shell expressions that serves a real purpose (e.g. add number of lines in files, hint: use this for \texttt{wc}:   \texttt{wc -l < myfile.txt} if doing this)
+			 )
+		\end{itemize}
+
+	\end{enumerate}
+	
+	\noindent The next few questions are about \textbf{Terminal User Interfaces (TUIs)} and the \texttt{textual} Python library. We will be starting this topic after spring break.
+	
+	\begin{enumerate}[resume]
+		\item Install the \texttt{textual} Python library using \texttt{pip install textual}. If you have a conda environment for this class, you can install \texttt{textual} within that. After you install \texttt{textual}, run its demo by typing \texttt{python -m textual} on the command line.
+		
+		\item Learn about \textbf{Terminal User Interfaces (TUIs)} and textual by reading the following references.
+		\begin{enumerate}
+			\item \textbf{Python Textual: Build Beautiful UIs in the Terminal} 
+			 \begin{center}
+				\href{https://realpython.com/python-textual}{https://realpython.com/python-textual}
+			\end{center}
+			 You can skip the part about installing (since we did that above) and you can stop when you finish the CSS section. (Most of the rest will be assigned reading on the next HW.) Doing the practice examples in the reading is highly recommended but not required.
+			 
+			 \item \textbf{Textual Home Page} - 	 			 	\href{https://textual.textualize.io/}{https://textual.textualize.io/} \quad Explore this website checking out the home page, widgets page, and some of the other pages within the site.
+
+
+		\end{enumerate}
+	\end{enumerate}
+\end{document}
+
