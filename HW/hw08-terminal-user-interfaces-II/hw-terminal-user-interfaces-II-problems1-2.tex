@@ -1,0 +1,36 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1.0in]{geometry}
+\usepackage{amssymb}	% for \square check-box
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{graphicx}
+
+\pagestyle{empty}
+\newcounter{lastNum}   % allows for interspersing text between questions
+\begin{document}
+	
+	\begin{center}
+		\textbf{Data Science Techniques (MAT 339)} \\
+		\textbf{Homework 8} - - \textit{Initial batch of problems, more to come} -- \textbf{20 points}\\
+	\end{center}
+	By the beginning of class on \underline{Wednesday, April 1st}, turn in a \textbf{hard-copy} of answers to questions asking for hard-copy responses and \textbf{upload Python files} to Canvas for questions asking you to program TUIs, following the naming convention specified in each problem. \\
+	
+	\begin{enumerate}
+		
+		\item Build a \textbf{counter TUI} using \texttt{textual}. The TUI should have one button to increase the counter and another to reset the counter. The counter should be displayed in the TUI. Each button should be given a clear, understandable label. Hint: you can use an instance variable to keep track of the counter. Name this file \textbf{\texttt{counter\_buttons.py}}.
+	
+		
+
+
+	\item The goals of this question are for you to increase your familiarity with \texttt{textual} and to gain more experience "reading the docs", meaning going through the technical documentation of a software library on your own. Answer this question using the \texttt{textual} widget reference page at  			\href{https://textual.textualize.io/widgets/}{https://textual.textualize.io/widgets/}. \textbf{You may not use AI to help you answer this question.}  
+	\begin{enumerate}
+		\item For each of the widgets in the list below, find on the widget's reference page the \textbf{parameters} that can be passed into the widget when it is created (look for entries in the "Table of contents" on the right side of the screen that begin with \texttt{param}).  Choose \textbf{2-3} parameters you think might be useful to use and put them in a small table that has these columns: \underline{parameter name}, \underline{description} (paraphrase in your own words if possible), and \underline{example} (create an example value that could make sense). Do this for these widgets: \textbf{Input, Header, Link, Select}, and \textbf{1 more of your choice}.
+		\item \textbf{Messages} in \texttt{textual} are triggered by \textbf{events}. This question is similar to the previous one but instead of finding \textbf{parameters}, this time find \textbf{messages} relating to widgets. See the "Messages" entry in the "Table of contents" on the right side of the screen. Create a table again, this time with the columns: \underline{message name} and \underline{meaning} (i.e. what does it mean when this event is generated). Fill the table with \textbf{at least 1 }message for each of these widgets: \textbf{Input, Button, Select}, and \textbf{1 more of your choice}.
+		\item When an event triggers a message, a widget parameter may be changed. Looking over the parameters you found in part (a) or others from the documentation, create a table with \textbf{at least three} such parameters (so there will be at least 3 rows in this table) having the columns: \underline{name of parameter that changes}, \underline{parameter's associated widget}, \underline{event causing the change}. 
+	\end{enumerate}
+
+
+
+		\end{enumerate}
+\end{document}
+
