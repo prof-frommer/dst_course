@@ -9,19 +9,16 @@
 \newcounter{lastNum}   % allows for interspersing text between questions
 \begin{document}
 	
-	\begin{center}
-		\textbf{Data Science Techniques (MAT 339)} \\
-		\textbf{Homework 8} - - \textit{Initial batch of problems, more to come} -- \textbf{20 points}\\
-	\end{center}
-	By the beginning of class on \underline{Wednesday, April 1st}, turn in a \textbf{hard-copy} of answers to questions asking for hard-copy responses and \textbf{upload Python files} to Canvas for questions asking you to program TUIs, following the naming convention specified in each problem. \\
-	
-	\begin{enumerate}
-		
-		\item Build a \textbf{counter TUI} using \texttt{textual}. The TUI should have one button to increase the counter and another to reset the counter. The counter should be displayed in the TUI. Each button should be given a clear, understandable label. Hint: you can use an instance variable to keep track of the counter. Name this file \textbf{\texttt{counter\_buttons.py}}.
-	
-		
+\begin{center}
+	\textbf{Data Science Techniques (MAT 339)} \\
+	\textbf{Homework 8} - - \textit{Initial batch of problems, more to come} -- \textbf{20 points}\\
+\end{center}
+By the beginning of class on \underline{Wednesday, April 1st}, turn in a \textbf{hard-copy} of answers to questions asking for hard-copy responses and \textbf{upload Python files} to Canvas for questions asking you to program TUIs, following the naming convention specified in each problem. \\
 
-
+\begin{enumerate}
+		
+	\item Build a \textbf{counter TUI} using \texttt{textual}. The TUI should have one button to increase the counter and another to reset the counter. The counter should be displayed in the TUI. Each button should be given a clear, understandable label. Hint: you can use an instance variable to keep track of the counter. Name this file \textbf{\texttt{counter\_buttons.py}}.
+	
 	\item The goals of this question are for you to increase your familiarity with \texttt{textual} and to gain more experience "reading the docs", meaning going through the technical documentation of a software library on your own. Answer this question using the \texttt{textual} widget reference page at  			\href{https://textual.textualize.io/widgets/}{https://textual.textualize.io/widgets/}. \textbf{You may not use AI to help you answer this question.}  
 	\begin{enumerate}
 		\item For each of the widgets in the list below, find on the widget's reference page the \textbf{parameters} that can be passed into the widget when it is created (look for entries in the "Table of contents" on the right side of the screen that begin with \texttt{param}).  Choose \textbf{2-3} parameters you think might be useful to use and put them in a small table that has these columns: \underline{parameter name}, \underline{description} (paraphrase in your own words if possible), and \underline{example} (create an example value that could make sense). Do this for these widgets: \textbf{Input, Header, Link, Select}, and \textbf{1 more of your choice}.
@@ -29,8 +26,22 @@
 		\item When an event triggers a message, a widget parameter may be changed. Looking over the parameters you found in part (a) or others from the documentation, create a table with \textbf{at least three} such parameters (so there will be at least 3 rows in this table) having the columns: \underline{name of parameter that changes}, \underline{parameter's associated widget}, \underline{event causing the change}. 
 	\end{enumerate}
 
+	\item Build a \textbf{TUI} using \texttt{textual} in a file named \texttt{divisor.py} that reports whether one user-inputted number (the "dividend") can be divided with no remainder by another user-inputted number (the "divisor"). The TUI should meet these requirements:
+	\begin{itemize}
+		\item accept each number from an \textbf{Input} widget
+		\item include a label near each input widget identifying which number goes where (e.g. "dividend" or "divisor"); hint: consider a \textbf{Label} widget
+		\item the above input and label widgets should fill a vertical column on the left-hand side of the TUI (hint use \texttt{with Vertical} after importing \texttt{Vertical()} from \texttt{textual.containers})
+		\item there should be a right-hand side column containing a message to the user saying whether the divisor divides the dividend or not, e.g. "7 does divide 21", "4 does not divide 9". To simplify any error-handling, consider using a \texttt{try-except} block that tries to divide the inputs. If the division operation can occur, report one of the messages above. If not, the \texttt{except} part of the block should set a message saying "Input valid numbers" or similar.
+	\end{itemize}
+	\vspace{.1in}
+	
+	An example of this TUI and its behavior is shown below. 		
+	
+	\vspace{.1in}
+	\includegraphics[width=2.7in]{divisor-y.png}\qquad
+	\includegraphics[width=2.7in]{divisor-n.png}
+	
 
-
-		\end{enumerate}
+\end{enumerate}
 \end{document}
 
