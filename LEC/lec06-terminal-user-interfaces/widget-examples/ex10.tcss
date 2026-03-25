@@ -1,0 +1,18 @@
+/* comments in CSS look like this */
+
+Static {
+    background: blue;
+    padding: 1 1;
+}
+
+#static_with_id {
+    border: solid white
+}
+
+.static_cls1 {
+    background: green;
+}
+
+.static_cls2 {
+    border: dashed yellow;
+}

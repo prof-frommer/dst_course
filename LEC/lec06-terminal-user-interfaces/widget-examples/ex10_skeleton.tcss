@@ -1,0 +1,14 @@
+Static {
+    background: blue;
+    padding: 1 1;
+}
+
+#static_with_id {
+    /* FILL IN  */
+}
+
+.static_cls1 
+    /* FILL IN  */
+
+
+/* FILL IN the other class*/
