@@ -5,6 +5,7 @@
 \usepackage{enumitem}
 \usepackage{graphicx}
 
+
 \pagestyle{empty}
 \newcounter{lastNum}   % allows for interspersing text between questions
 \begin{document}
@@ -40,6 +41,27 @@ By the beginning of class on \underline{Wednesday, April 1st}, turn in a \textbf
 	\vspace{.1in}
 	\includegraphics[width=2.7in]{divisor-y.png}\qquad
 	\includegraphics[width=2.7in]{divisor-n.png}
+	
+
+	\item Build a \textbf{TUI} using \texttt{textual} in a file named \texttt{text\_view.py} that allows the user to open, view and change the appearance of text files in a text area portion of the TUI. The TUI should meet these requirements:
+	\begin{itemize}
+		\item has two vertical containers - the left one should have buttons labeled "Bold" and "Blue" and a Select widget with names of three files; the right one should be a Static widget 
+		\item when the user selects a name from the Select widget, the contents of the file by that name should appear in the Static widget on the right side (they should be loaded from the file, not hard-coded into this py file)
+		\item when the user clicks the "Bold" button, the text in the Static widget should turn bold
+		\item when the user clicks the "Blue" button, the text in the Static widget should turn blue		
+	\end{itemize}
+	
+	The appearance should resemble the screen shots below.
+	
+	\includegraphics[width=2.7in]{haiku1.png}\qquad
+	\includegraphics[width=2.7in]{haiku2.png}
+	
+	\sloppy
+	Three sample files (haikus) are provided in this homework's folder but you can use your own files.  The samples came from: \url{https://thehaikufoundation.org/omeka/files/original/50a61193bc1caf7a3c86b9acc96d4b44.pdf}
+	
+	Hint: you can add the \texttt{rich}-style formatting we covered to the beginning of the Static widget's content to set bold and blue color.
+	
+	\item \textit{One final problem will be added soon.}
 	
 
 \end{enumerate}
