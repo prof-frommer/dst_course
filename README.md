@@ -8,6 +8,7 @@ Course materials for Data Science Techniques (USCGA course)
 **See `ADMIN/Accessing Course Content using GitHub.docx` for guidance on using this repo.**  Ask me if you have any questions.
 
 ## Repository history and updates
+- **2026-03-29** - updated hw08 with its completed version containing all its problems
 - **2026-03-25** - added lec06 TUI files Part II
 - **2026-03-22** - added #3 to hw08 (which was posted earlier)
 - **2026-03-18** - added lec06 terminal user interface (TUI) files
