@@ -8,6 +8,7 @@ Course materials for Data Science Techniques (USCGA course)
 **See `ADMIN/Accessing Course Content using GitHub.docx` for guidance on using this repo.**  Ask me if you have any questions.
 
 ## Repository history and updates
+- **2026-04-08** - added lec07 OpenCV materials
 - **2026-04-03** - added final project description
 - **2026-04-01** - added lec07 images-as-data files
 - **2026-03-29** - updated hw08 with its completed version containing all its problems
